@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google Analytics 4. Paste your Measurement ID (looks like G-XXXXXXXXXX) into GA_ID to turn it on. -->
+<script>
+  window.GA_ID = 'G-9PKKBW8XG1';
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  window.track = function (name, params) { try { if (window.GA_ID) gtag('event', name, params || {}); } catch (e) {} };
+  if (window.GA_ID) {
+    var ga = document.createElement('script'); ga.async = true; ga.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
+    document.head.appendChild(ga);
+    gtag('js', new Date()); gtag('config', window.GA_ID);
+  }
+  // Every link click gets a named event, so GA4 shows which ones people actually use.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var name = /^mailto:/.test(href) ? (/Tour/i.test(href) ? 'tour_inquiry' : 'booking_email')
+      : /spotify\.com/.test(href) ? 'spotify_open'
+      : /instagram\.com\/garrett/.test(href) ? 'instagram_open'
+      : /maps\.apple\.com/.test(href) ? 'show_map_open'
+      : /work\.html/.test(href) ? 'jobs_open'
+      : /consign\.html/.test(href) ? 'consign_open'
+      : /runforsomething\.us/.test(href) ? 'games_site_open'
+      : a.classList.contains('inquire-trigger') ? 'tour_inquiry'
+      : null;
+    if (name) track(name, { link_text: (a.textContent || '').trim().slice(0, 40) });
+  }, true);
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Work With Me — Garrett Summers</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:,">
+<style>
+  :root{
+    color-scheme: light dark;
+    --ink:#0f1e3c; --ink-dim:#4a5672; --ground:#f5f0e6; --ground-raised:#fffaf0;
+    --brass:#e2441f; --rust:#d1202f; --line:#d9d2c3;
+    --mono:"Helvetica Neue",Helvetica,Arial,sans-serif; --serif:"Helvetica Neue",Helvetica,Arial,sans-serif; --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#f3ede1; --ink-dim:#a6b0c6; --ground:#0c1830; --ground-raised:#112141; --brass:#ff5a32; --rust:#e8323f; --line:#22324f; }
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{
+    background:var(--ground);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16.5px;
+    line-height:1.55;
+    padding-inline:20px;
+  }
+  a{color:var(--brass);}
+  .wrap{max-width:560px;margin:0 auto;padding-block:48px 80px;}
+  .back{
+    display:inline-block;
+    font-family:var(--mono);
+    font-size:0.7rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:var(--ink-dim);
+    margin-bottom:28px;
+  }
+  .back:hover{color:var(--brass);}
+  h1{
+    font-family:var(--serif);
+    font-size:2rem;
+    font-weight:700;
+    margin:0 0 10px;
+  }
+  .lead{
+    font-family:var(--sans);
+    font-size:0.98rem;
+    color:var(--ink-dim);
+    margin:0 0 36px;
+  }
+  .roles{
+    display:flex;
+    flex-direction:column;
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:8px;
+    overflow:hidden;
+    margin-bottom:40px;
+  }
+  .role{
+    background:var(--ground-raised);
+    padding:16px 18px;
+  }
+  .role-name{
+    font-family:var(--serif);
+    font-size:1.05rem;
+    font-weight:700;
+    margin-bottom:4px;
+  }
+  .role-desc{
+    font-family:var(--sans);
+    font-size:0.88rem;
+    color:var(--ink-dim);
+  }
+  h2{
+    font-family:var(--mono);
+    font-size:0.72rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-dim);
+    margin:0 0 14px;
+  }
+  form{display:flex;flex-direction:column;}
+  .form-note{font-size:0.88rem;color:var(--ink-dim);margin:0 0 20px;}
+  .field{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    font-family:var(--mono);
+    font-size:0.66rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--ink-dim);
+    margin-bottom:16px;
+  }
+  .field input, .field textarea, .field select{
+    font-family:var(--sans);
+    font-size:0.95rem;
+    color:var(--ink);
+    background:var(--ground-raised);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:11px 13px;
+    resize:none;
+  }
+  .field select{appearance:none;cursor:pointer;}
+  .field input:focus, .field textarea:focus, .field select:focus{outline:none;border-color:var(--brass);}
+  .submit{
+    width:100%;
+    border:none;
+    border-radius:8px;
+    padding:14px;
+    margin-top:6px;
+    background:var(--brass);
+    color:var(--ground);
+    font-family:var(--mono);
+    font-size:0.78rem;
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    cursor:pointer;
+  }
+  .submit:active{transform:scale(0.98);}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">&larr; Garrett Summers</a>
+    <h1>Work With Me</h1>
+    <p class="lead">I hire for shows and tour dates on a per-gig, 1099 basis. If you're good at one of these and based in or near Bozeman, send me a message.</p>
+
+    <h2>Open Roles</h2>
+    <div class="roles">
+      <div class="role">
+        <div class="role-name">Audio Engineering &amp; Live Sound</div>
+        <div class="role-desc">Stage tech, DI rigs, live board mixes, and mobile recording capture for shows.</div>
+      </div>
+      <div class="role">
+        <div class="role-name">Video &amp; Visual Production</div>
+        <div class="role-desc">Live performance capture, tour recaps, and short-form video for releases.</div>
+      </div>
+      <div class="role">
+        <div class="role-name">Live Photography</div>
+        <div class="role-desc">Working alongside existing photo partners to document shows and merch.</div>
+      </div>
+      <div class="role">
+        <div class="role-name">Tour &amp; Business Ops</div>
+        <div class="role-desc">Booking help, venue logistics, travel routing, and promo for upcoming dates.</div>
+      </div>
+    </div>
+
+    <h2>Get In Touch</h2>
+    <form id="workForm">
+      <p class="form-note">This opens a draft in your mail app. Press Send there to complete your inquiry. If your mail app does not open, email <a href="mailto:jobs@garrettsummers.us">jobs@garrettsummers.us</a>.</p>
+      <label class="field">
+        <span>Your name</span>
+        <input type="text" id="name" placeholder="Full name" required>
+      </label>
+      <label class="field">
+        <span>Role you're interested in</span>
+        <select id="role" required>
+          <option value="" disabled selected>Choose one</option>
+          <option value="Audio Engineering / Live Sound">Audio Engineering / Live Sound</option>
+          <option value="Video & Visual Production">Video &amp; Visual Production</option>
+          <option value="Live Photography">Live Photography</option>
+          <option value="Tour & Business Ops">Tour &amp; Business Ops</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>Portfolio, resume, or relevant links</span>
+        <textarea id="portfolio" rows="3" placeholder="Instagram, website, Google Drive, whatever shows your work"></textarea>
+      </label>
+      <label class="field">
+        <span>Your email</span>
+        <input type="email" id="email" placeholder="you@email.com" required>
+      </label>
+      <button type="submit" class="submit">Open email draft</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('workForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var role = document.getElementById('role').value.trim();
+      var portfolio = document.getElementById('portfolio').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var to = 'jobs@garrettsummers.us';
+      var subject = 'Work with me: ' + role;
+      var body = 'Name: ' + name +
+        '\nRole: ' + role +
+        '\nPortfolio/links: ' + (portfolio || '(none given)') +
+        '\nMy email: ' + email;
+      window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>

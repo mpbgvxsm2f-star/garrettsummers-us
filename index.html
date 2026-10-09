@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Garrett Summers</title>
+<meta name="description" content="Garrett Summers: keys, organ and songs in Bozeman, Montana. Shows with Willy on the Wire and Rob Wolf, booking, and projects including the Joe Kirchner Memorial Fund.">
+<meta property="og:title" content="Garrett Summers">
+<meta property="og:description" content="Keys, organ, songs. Bozeman, Montana.">
+<meta property="og:image" content="https://garrettsummers.us/images/photo16.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+  window.GA_ID='G-9PKKBW8XG1';
+  window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+  window.track=function(n,p){try{if(window.GA_ID)gtag('event',n,p||{});}catch(e){}};
+  (function(){var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id='+window.GA_ID;document.head.appendChild(g);gtag('js',new Date());gtag('config',window.GA_ID);})();
+</script>
+<style>
+:root{
+  --bg:#f5f0e6; --ink:#0f1e3c; --muted:#4a5672; --line:#d9d2c3;
+  --card:#efe8da; --sun:#e2441f; --sun2:#f59a23; --nord:#d1202f;
+  --navy:#0f1e3c; --on-navy:#f5f0e6; --field:#fffaf0;
+  --grad:linear-gradient(90deg,var(--nord),var(--sun) 45%,var(--sun2));
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c1830; --ink:#f3ede1; --muted:#a6b0c6; --line:#22324f;
+    --card:#112141; --sun:#ff5a32; --sun2:#ffad3b; --nord:#e8323f;
+    --navy:#081226; --on-navy:#f3ede1; --field:#0f1d3a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0c1830; --ink:#f3ede1; --muted:#a6b0c6; --line:#22324f;
+  --card:#112141; --sun:#ff5a32; --sun2:#ffad3b; --nord:#e8323f;
+  --navy:#081226; --on-navy:#f3ede1; --field:#0f1d3a;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:60px}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:16px; line-height:1.45; -webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{display:block; max-width:100%}
+button{font:inherit}
+.wrap{max-width:1120px; margin:0 auto; padding:0 16px}
+@media (min-width:760px){.wrap{padding:0 40px}}
+.label{font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--sun); margin:0 0 10px}
+
+.bar{position:sticky; top:0; z-index:20; background:var(--navy); color:var(--on-navy)}
+.bar .wrap{display:flex; align-items:center; gap:18px; height:52px}
+.mark{font-weight:700; letter-spacing:-.01em; font-size:15px; display:flex; align-items:center; gap:10px; text-decoration:none; white-space:nowrap}
+.mark i{width:12px; height:12px; border-radius:50%; background:radial-gradient(circle at 35% 35%,var(--sun2),var(--sun) 55%,var(--nord)); display:inline-block}
+.nav{display:flex; gap:16px; overflow-x:auto; scrollbar-width:none; flex:1; font-size:13px; font-weight:500}
+.nav::-webkit-scrollbar{display:none}
+.nav a{text-decoration:none; opacity:.75; white-space:nowrap}
+.nav a:hover{opacity:1; color:var(--sun2)}
+.toggle{background:none; border:0; color:var(--on-navy); opacity:.75; font-size:13px; cursor:pointer; white-space:nowrap}
+.toggle:hover{opacity:1}
+@media (max-width:520px){.mark span{display:none}}
+
+.hero{display:grid; gap:24px; padding:36px 0 40px; border-bottom:2px solid var(--ink)}
+@media (min-width:860px){.hero{grid-template-columns:7fr 5fr; align-items:end; gap:40px; padding:56px 0}}
+h1{font-size:clamp(52px,11vw,120px); line-height:.88; letter-spacing:-.045em; font-weight:700; margin:0}
+h1 span{display:block}
+.lede{margin:22px 0 0; font-size:19px; line-height:1.4; max-width:32ch; color:var(--muted)}
+.lede b{color:var(--ink)}
+.hero-cta{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px}
+.btn{display:inline-block; padding:13px 22px; font-weight:700; font-size:15px; text-decoration:none; border:2px solid var(--ink); background:transparent; color:var(--ink); cursor:pointer}
+.btn.primary{background:var(--ink); color:var(--bg)}
+.btn:hover{border-color:var(--sun); background:var(--sun); color:#fff}
+.hero-img{position:relative; aspect-ratio:4/5; overflow:hidden; background:var(--navy)}
+.hero-img img{width:100%; height:100%; object-fit:cover}
+.hero-img::after{content:""; position:absolute; inset:auto 0 0 0; height:8px; background:var(--grad)}
+
+section{display:grid; gap:14px 40px; padding:44px 0; border-bottom:2px solid var(--ink)}
+@media (min-width:860px){section{grid-template-columns:3fr 9fr}}
+section h2{font-size:28px; letter-spacing:-.02em; margin:0; line-height:1}
+.note{margin:10px 0 0; color:var(--muted); font-size:15px; max-width:28ch}
+
+.shows{border-top:1px solid var(--line)}
+.show{display:grid; grid-template-columns:88px 1fr auto; gap:4px 16px; padding:16px 0; border-bottom:1px solid var(--line); align-items:center}
+.show .d{font-weight:700; font-size:20px; letter-spacing:-.02em; line-height:1}
+.show .d small{display:block; font-size:12px; color:var(--muted); font-weight:500; letter-spacing:.06em; margin-top:4px}
+.show .v{font-weight:700; font-size:17px; letter-spacing:-.01em}
+.show .m{color:var(--muted); font-size:14px}
+.show .act{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--sun); margin-bottom:2px}
+.show .acts{display:flex; gap:8px}
+.chip{border:1.5px solid var(--ink); background:transparent; color:var(--ink); padding:7px 12px; font-size:13px; font-weight:700; text-decoration:none; cursor:pointer; white-space:nowrap}
+.chip:hover{background:var(--sun); border-color:var(--sun); color:#fff}
+.show.next .d{color:var(--sun)}
+.show.past{opacity:.55}
+@media (max-width:560px){.show{grid-template-columns:68px 1fr}.show .acts{grid-column:2}}
+.past-toggle{margin-top:14px; background:none; border:0; color:var(--muted); font-size:14px; cursor:pointer; padding:0; text-decoration:underline; text-underline-offset:3px}
+
+.spotify{width:100%; height:152px; border:0; border-radius:12px}
+.tip{margin-top:14px}
+
+.gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:4px}
+@media (min-width:760px){.gallery{grid-template-columns:repeat(4,1fr)}}
+.gallery button{padding:0; border:0; background:var(--navy); cursor:zoom-in; aspect-ratio:1; overflow:hidden}
+.gallery img{width:100%; height:100%; object-fit:cover; transition:transform .3s}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery .more{grid-column:1/-1; aspect-ratio:auto; background:none; color:var(--ink); padding:12px 0 0; text-align:left; font-weight:700; cursor:pointer; text-decoration:underline; text-underline-offset:3px}
+.lightbox{position:fixed; inset:0; z-index:60; background:rgba(5,10,22,.94); display:none; align-items:center; justify-content:center; padding:20px}
+.lightbox.open{display:flex}
+.lightbox img{max-height:88vh; width:auto}
+.lightbox .x{position:absolute; top:12px; right:16px; color:#fff; background:none; border:0; font-size:15px; font-weight:700; cursor:pointer}
+.lightbox .nv{position:absolute; top:50%; transform:translateY(-50%); background:none; border:0; color:#fff; font-size:34px; cursor:pointer; padding:12px}
+.lightbox .pv{left:4px} .lightbox .nx{right:4px}
+
+.closet{display:grid; grid-template-columns:repeat(2,1fr); gap:16px}
+@media (min-width:760px){.closet{grid-template-columns:repeat(3,1fr)}}
+.item{background:none; border:0; padding:0; text-align:left; color:inherit; cursor:pointer; text-decoration:none; display:block}
+.item .frame{aspect-ratio:4/5; overflow:hidden; background:var(--card)}
+.item img{width:100%; height:100%; object-fit:cover}
+.item .nm{font-weight:700; margin-top:10px; letter-spacing:-.01em}
+.item .pr{color:var(--muted); font-size:14px}
+.item .pr b{color:var(--sun)}
+.item:hover .nm{color:var(--sun)}
+
+form.grid{display:grid; gap:14px}
+@media (min-width:640px){form.grid{grid-template-columns:1fr 1fr}}
+.f label,form.grid label{display:block; font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+form.grid .wide{grid-column:1/-1}
+input,select,textarea{display:block; width:100%; margin-top:6px; padding:12px; font:inherit; font-size:16px; letter-spacing:0; text-transform:none; color:var(--ink); background:var(--field); border:1.5px solid var(--line); border-radius:0}
+textarea{min-height:96px; resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none; border-color:var(--sun)}
+.hp{position:absolute; left:-9999px}
+.form-note{grid-column:1/-1; font-size:13px; color:var(--muted); margin:0}
+.status{grid-column:1/-1; font-size:14px; color:var(--sun); margin:0}
+.status:empty{display:none}
+
+.sheet{position:fixed; inset:0; z-index:50; display:none}
+.sheet.open{display:block}
+.sheet .bk{position:absolute; inset:0; background:rgba(5,10,22,.55)}
+.sheet .pn{position:absolute; left:0; right:0; bottom:0; max-width:520px; margin:0 auto; background:var(--bg); padding:20px 20px calc(24px + env(safe-area-inset-bottom)); border-top:6px solid; border-image:var(--grad) 1; max-height:88vh; overflow:auto}
+@media (min-width:640px){.sheet .pn{bottom:auto; top:50%; transform:translateY(-50%)}}
+.sheet .hd{display:flex; justify-content:space-between; align-items:start; gap:12px; margin-bottom:14px}
+.sheet .tt{font-weight:700; font-size:20px; letter-spacing:-.02em}
+.sheet .st{color:var(--muted); font-size:14px}
+.sheet .x{background:none; border:0; color:var(--muted); font-weight:700; cursor:pointer}
+.sheet form{display:grid; gap:12px}
+.thread{display:flex; flex-direction:column; gap:8px; margin:6px 0 12px}
+.bubble{align-self:flex-end; background:var(--sun); color:#fff; padding:9px 13px; border-radius:16px 16px 4px 16px; max-width:85%; font-size:15px}
+.bubble.them{align-self:flex-start; background:var(--card); color:var(--ink); border-radius:16px 16px 16px 4px}
+.compose{display:flex; gap:8px; align-items:end}
+.compose textarea{min-height:44px; margin:0}
+.compose button{background:var(--ink); color:var(--bg); border:0; width:46px; height:46px; font-size:18px; cursor:pointer}
+.wc{font-size:12px; color:var(--muted); margin-top:6px}
+
+.ticket{position:relative; background:var(--navy); color:#f5f0e6; padding:28px 24px; overflow:hidden; aspect-ratio:9/12}
+.ticket::before{content:""; position:absolute; inset:0 0 auto 0; height:10px; background:var(--grad)}
+.ticket .ey{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:#ffad3b; font-weight:700; margin-top:12px}
+.ticket .bd{font-size:34px; font-weight:700; letter-spacing:-.03em; line-height:1; margin:18px 0 10px}
+.ticket .dt{font-size:22px; font-weight:700; color:#ff6a3d}
+.ticket .vn{font-size:17px; margin-top:6px} .ticket .ad{font-size:14px; opacity:.7}
+.ticket .br{position:absolute; left:24px; right:24px; bottom:20px; font-size:12px; opacity:.7; border-top:1px dashed rgba(255,255,255,.35); padding-top:10px}
+
+.projects{display:grid; grid-template-columns:1fr; border-top:1px solid var(--line)}
+@media (min-width:640px){.projects{grid-template-columns:1fr 1fr}}
+.proj{display:grid; grid-template-columns:28px 1fr; gap:4px 12px; padding:18px 4px 20px 0; border-bottom:1px solid var(--line); text-decoration:none}
+@media (min-width:640px){.proj:nth-child(odd){padding-right:24px; border-right:1px solid var(--line)} .proj:nth-child(even){padding-left:24px}}
+.proj .n{font-size:13px; font-weight:700; color:var(--sun); padding-top:4px}
+.proj h3{margin:0; font-size:21px; letter-spacing:-.02em; line-height:1.1}
+.proj .kind{grid-column:2; font-size:12px; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); margin:2px 0 6px}
+.proj p{grid-column:2; margin:0; font-size:15px; color:var(--muted)}
+.proj .url{grid-column:2; margin-top:10px; font-size:14px; font-weight:700}
+a.proj:hover h3{color:var(--sun)}
+
+.contact{border-top:1px solid var(--line)}
+.contact a{display:grid; grid-template-columns:1fr auto; gap:16px; padding:15px 0; border-bottom:1px solid var(--line); text-decoration:none; align-items:baseline}
+.contact .what{font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--muted)}
+.contact .addr{font-size:clamp(15px,2.4vw,22px); font-weight:700; letter-spacing:-.01em}
+.contact a:hover .addr{color:var(--sun)}
+
+.sunline{height:6px; background:var(--grad)}
+footer{background:var(--navy); color:var(--on-navy)}
+footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-between; padding-top:22px; padding-bottom:30px; font-size:13px}
+footer a{text-decoration:none; opacity:.8} footer a:hover{opacity:1; color:var(--sun2)}
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="wrap">
+  <a class="mark" href="#top"><i></i><span>Garrett Summers</span></a>
+  <nav class="nav">
+    <a href="#shows">Shows</a><a href="#listen">Listen</a><a href="#photos">Photos</a><a href="#closet">Closet</a><a href="#book">Book</a><a href="#projects">Projects</a>
+  </nav>
+  <button class="toggle" id="themeToggle" type="button">Dark</button>
+</div></div>
+
+<div class="wrap" id="top">
+
+  <div class="hero">
+    <div>
+      <p class="label">Bozeman, Montana</p>
+      <h1><span>Garrett</span><span>Summers</span></h1>
+      <p class="lede"><b>Keys, organ, songs.</b> Willy on the Wire, keys for Rob Wolf, and the things I build around Bozeman's scene.</p>
+      <div class="hero-cta"><a class="btn primary" href="#book">Book Garrett</a><a class="btn" href="#shows">See shows</a></div>
+    </div>
+    <div class="hero-img"><img src="images/photo16.jpg" alt="Garrett Summers on keys under warm stage lights"></div>
+  </div>
+
+  <section id="shows">
+    <div><p class="label">Live</p><h2>Shows</h2><p class="note">Tap Share to send a date as a ticket.</p></div>
+    <div>
+      <div class="shows" id="showsList"></div>
+      <button class="past-toggle" id="pastToggle" type="button" hidden>Show past dates</button>
+      <div class="shows" id="pastList" hidden></div>
+    </div>
+  </section>
+
+  <section id="listen">
+    <div><p class="label">Listen</p><h2>Stream it.</h2><p class="note">Follow it, share it. Every play helps.</p></div>
+    <div>
+      <iframe class="spotify" title="Garrett Summers on Spotify" src="https://open.spotify.com/embed/track/2Yq03bg1qciOcFp6aq3LAF?utm_source=generator" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      <p class="tip"><a class="btn" href="https://open.spotify.com/artist/3vl6DlT9GTJ4khgn5FyEgI" target="_blank" rel="noopener">Follow on Spotify</a></p>
+    </div>
+  </section>
+
+  <section id="photos">
+    <div><p class="label">Photos</p><h2>On stage.</h2><p class="note">By <a href="https://instagram.com/ansel.barclay" target="_blank" rel="noopener">@ansel.barclay</a></p></div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section id="closet">
+    <div><p class="label">Closet</p><h2>Stage pieces.</h2><p class="note">Worn on tour. One of each.</p></div>
+    <div class="closet">
+      <button class="item" type="button" data-item="Stage-Worn Corduroy Vest" data-start="140" data-size="L">
+        <div class="frame"><img src="images/closet-corduroy-vest.jpg" alt="Corduroy vest worn on stage" loading="lazy"></div>
+        <div class="nm">Stage-Worn Corduroy Vest</div>
+        <div class="pr">Size L · Bids from <b>$140</b></div>
+      </button>
+      <a class="item" href="consign.html">
+        <div class="frame"><img src="images/closet-talkingheads-tee.jpg" alt="Vintage tee" loading="lazy"></div>
+        <div class="nm">Consign with me →</div>
+        <div class="pr">Have stage or tour gear to sell?</div>
+      </a>
+    </div>
+  </section>
+
+  <section id="book">
+    <div><p class="label">Book</p><h2>Play your room.</h2><p class="note">Bars, private parties, weddings, festivals, studio sessions.</p></div>
+    <form class="grid" id="bookForm" novalidate>
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Your email<input name="email" type="email" autocomplete="email" required></label>
+      <label>Date<input name="date" type="date" required></label>
+      <label>City &amp; venue<input name="venue" placeholder="Bozeman · The Filling Station"></label>
+      <label>Type of gig<select name="type"><option>Concert venue</option><option>Festival</option><option>Bar / club show</option><option>Private event</option><option>Wedding</option><option>Corporate event</option><option>Studio session</option><option>Other</option></select></label>
+      <label>Who you want<select name="act"><option>Willy on the Wire</option><option>Rob Wolf</option><option>Garrett Summers (solo)</option></select></label>
+      <label>Budget<select name="budget"><option>Let's talk</option><option>Under $300</option><option>$300–$750</option><option>$750–$1,500</option><option>$1,500+</option></select></label>
+      <label>Venue capacity<select name="capacity"><option>0–49</option><option>50–99</option><option>100–299</option><option>300–499</option><option>500+</option></select></label>
+      <label class="wide">Anything else<textarea name="notes" placeholder="Set length, load-in, sound system, the vibe…"></textarea></label>
+      <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+      <p class="status" id="bookStatus" role="status"></p>
+      <div class="wide"><button class="btn primary" type="submit">Send booking request</button></div>
+      <p class="form-note">Opens an email draft. Hit send in your mail app.</p>
+    </form>
+  </section>
+
+  <section id="projects">
+    <div><p class="label">Projects</p><h2>One roof.</h2></div>
+    <div class="projects">
+      <a class="proj" href="https://garrettsummersmusic.com"><span class="n">01</span><h3>Garrett Summers Music</h3><span class="kind">Music</span><p>The original artist site: shows, listening, booking.</p><span class="url">garrettsummersmusic.com →</span></a>
+      <a class="proj" href="https://jkmf.us"><span class="n">02</span><h3>Joe Kirchner Memorial Fund</h3><span class="kind">Nonprofit · Board</span><p>Support for Bozeman musicians and their families: grants, mentorship, and a path to mental health care.</p><span class="url">jkmf.us →</span></a>
+      <a class="proj" href="https://bandsofbigsky.us"><span class="n">03</span><h3>Bands of Big Sky</h3><span class="kind">Community</span><p>The bands, players, and crews that make up the scene, in one place.</p><span class="url">bandsofbigsky.us →</span></a>
+      <div class="proj"><span class="n">04</span><h3>Kerosene Record Company</h3><span class="kind">Music business · Co-founder</span><p>Financing and promotion for touring bands. Built with Caleb Sandish.</p></div>
+      <a class="proj" href="https://runforsomething.us"><span class="n">05</span><h3>Run for Something</h3><span class="kind">Game</span><p>A political compass you play instead of take. Public alpha.</p><span class="url">runforsomething.us →</span></a>
+      <div class="proj"><span class="n">06</span><h3>rsecon</h3><span class="kind">Co-op · With Nathan Reseigh</span><p>Coming soon.</p></div>
+      <a class="proj" href="work.html"><span class="n">07</span><h3>Work with me</h3><span class="kind">Jobs</span><p>Session work, gigs, and paid roles across the projects.</p><span class="url">Jobs →</span></a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div><p class="label">Contact</p><h2>Say hi.</h2></div>
+    <div class="contact">
+      <a href="mailto:jobs@garrettsummers.us"><span class="what">Work &amp; inquiries</span><span class="addr">jobs@garrettsummers.us</span></a>
+    </div>
+  </section>
+
+</div>
+
+<div class="sunline"></div>
+<footer><div class="wrap">
+  <span>© Garrett Summers · Bozeman, MT · Photos by <a href="https://instagram.com/ansel.barclay">@ansel.barclay</a></span>
+  <span><a href="https://www.instagram.com/garrett__summers/">Instagram</a> &nbsp; <a href="https://open.spotify.com/artist/3vl6DlT9GTJ4khgn5FyEgI">Spotify</a> &nbsp; <a href="https://jkmf.us">JKMF</a> &nbsp; <a href="work.html">Jobs</a></span>
+</div></footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="x" type="button" data-close>Close</button>
+  <button class="nv pv" type="button" aria-label="Previous">‹</button>
+  <img alt="">
+  <button class="nv nx" type="button" aria-label="Next">›</button>
+</div>
+
+<div class="sheet" id="bidSheet" aria-hidden="true">
+  <div class="bk" data-close></div>
+  <div class="pn" role="dialog" aria-modal="true" aria-labelledby="bidTitle">
+    <div class="hd"><div><div class="tt" id="bidTitle">Place a bid</div><div class="st" id="bidSub"></div></div><button class="x" type="button" data-close>Close</button></div>
+    <form id="bidForm" class="f">
+      <label>Your bid<input type="number" id="bidAmount" inputmode="decimal" min="0" step="1" placeholder="$" required></label>
+      <label>Your email<input type="email" id="bidEmail" placeholder="you@email.com" required></label>
+      <button class="btn primary" type="submit">Send bid</button>
+      <p class="form-note">Opens an email draft. Hit send in your mail app.</p>
+    </form>
+  </div>
+</div>
+
+<div class="sheet" id="inqSheet" aria-hidden="true">
+  <div class="bk" data-close></div>
+  <div class="pn" role="dialog" aria-modal="true" aria-labelledby="inqTitle">
+    <div class="hd"><div><div class="tt" id="inqTitle">Garrett Summers</div><div class="st">Usually replies within a day</div></div><button class="x" type="button" data-close>Close</button></div>
+    <div class="thread" id="inqThread"></div>
+    <div id="inqCompose">
+      <div class="compose"><textarea id="inqText" rows="1" placeholder="Type a message…" aria-label="Message"></textarea><button type="button" id="inqSend" aria-label="Continue">➤</button></div>
+      <div class="wc" id="inqWc">50 words left</div>
+    </div>
+    <form id="inqContact" class="f" hidden>
+      <label>Name<input id="inqName" required></label>
+      <label>Phone<input id="inqPhone" type="tel" required></label>
+      <label>Email (optional)<input id="inqEmail" type="email"></label>
+      <button class="btn primary" type="submit">Open email draft</button>
+    </form>
+  </div>
+</div>
+
+<div class="sheet" id="tixSheet" aria-hidden="true">
+  <div class="bk" data-close></div>
+  <div class="pn" role="dialog" aria-modal="true" aria-label="Show ticket">
+    <div class="hd"><div class="tt">Share this show</div><button class="x" type="button" data-close>Close</button></div>
+    <div class="ticket"><div class="ey">Admit one</div><div class="bd" id="tBand"></div><div class="dt" id="tDate"></div><div class="vn" id="tVenue"></div><div class="ad" id="tAddr"></div><div class="br">Garrett Summers · garrettsummers.us</div></div>
+    <p style="margin:14px 0 0"><button class="btn primary" type="button" id="tShare">Share</button></p>
+  </div>
+</div>
+
+<script id="shows-data" type="application/json">
+[
+  {
+    "date": "AUG 08",
+    "venue": "Eagles Lodge",
+    "city": "Bozeman, MT",
+    "addr": "316 E Main St",
+    "act": "Willy on the Wire",
+    "linkHref": "https://maps.apple.com/?q=316+E+Main+St,+Bozeman,+MT+59715",
+    "linkText": "Map"
+  },
+  {
+    "date": "SEP 18",
+    "venue": "Eagles Lodge",
+    "city": "Bozeman, MT",
+    "addr": "316 E Main St",
+    "act": "Willy on the Wire",
+    "linkHref": "https://maps.apple.com/?q=316+E+Main+St,+Bozeman,+MT+59715",
+    "linkText": "Map"
+  },
+  {
+    "date": "SEP 19",
+    "venue": "Eagles Lodge",
+    "city": "Bozeman, MT",
+    "addr": "316 E Main St",
+    "act": "Willy on the Wire",
+    "linkHref": "https://maps.apple.com/?q=316+E+Main+St,+Bozeman,+MT+59715",
+    "linkText": "Map"
+  },
+  {
+    "date": "OCT 09",
+    "venue": "Tune Up Bar",
+    "city": "Bozeman, MT",
+    "addr": "24 W Mendenhall St",
+    "act": "Rob Wolf",
+    "linkHref": "https://maps.apple.com/?q=24+W+Mendenhall+St,+Bozeman,+MT+59715",
+    "linkText": "Map"
+  },
+  {
+    "date": "OCT 10",
+    "venue": "Private Charity Event",
+    "city": "Details private",
+    "addr": "",
+    "act": "Rob Wolf",
+    "private": true
+  },
+  {
+    "date": "OCT 16",
+    "venue": "The Jump",
+    "city": "Bozeman, MT",
+    "addr": "75770 Gallatin Rd",
+    "act": "Rob Wolf",
+    "linkHref": "https://maps.apple.com/?q=75770+Gallatin+Rd,+Bozeman,+MT",
+    "linkText": "Map"
+  },
+  {
+    "date": "OCT 31",
+    "venue": "Tune Up Bar &mdash; Halloween",
+    "city": "Bozeman, MT",
+    "addr": "24 W Mendenhall St",
+    "act": "Willy on the Wire",
+    "time": "9:00 PM",
+    "linkHref": "https://maps.apple.com/?q=24+W+Mendenhall+St,+Bozeman,+MT+59715",
+    "linkText": "Map"
+  },
+  {
+    "date": "NOV 07",
+    "venue": "Tune Up Bar",
+    "city": "Bozeman, MT",
+    "addr": "24 W Mendenhall St",
+    "act": "Rob Wolf",
+    "linkHref": "https://maps.apple.com/?q=24+W+Mendenhall+St,+Bozeman,+MT+59715",
+    "linkText": "Map"
+  },
+  {
+    "date": "NOV 20",
+    "venue": "The Jump",
+    "city": "Bozeman, MT",
+    "addr": "75770 Gallatin Rd",
+    "act": "Rob Wolf",
+    "linkHref": "https://maps.apple.com/?q=75770+Gallatin+Rd,+Bozeman,+MT",
+    "linkText": "Map"
+  },
+  {
+    "date": "DEC 18",
+    "venue": "The Jump",
+    "city": "Bozeman, MT",
+    "addr": "75770 Gallatin Rd",
+    "act": "Rob Wolf",
+    "linkHref": "https://maps.apple.com/?q=75770+Gallatin+Rd,+Bozeman,+MT",
+    "linkText": "Map"
+  },
+  {
+    "date": "2027 &middot; TBD",
+    "venue": "Sweet Pea Festival 50th Anniversary &mdash; Main Stage",
+    "city": "Lindley Park, Bozeman, MT",
+    "addr": "Lindley Park",
+    "act": "Willy on the Wire",
+    "linkHref": "https://maps.apple.com/?q=Lindley+Park,+Bozeman,+MT",
+    "linkText": "Map"
+  },
+  {
+    "date": "PENDING",
+    "venue": "Tour Dates &mdash; Willy on the Wire",
+    "city": "Venues TBD",
+    "addr": "TBD",
+    "act": "Willy on the Wire",
+    "linkHref": "mailto:booking@garrettsummersmusic.com?subject=Tour%20dates",
+    "linkText": "Inquire"
+  },
+  {
+    "date": "PENDING",
+    "venue": "Tour Dates &mdash; Rob Wolf",
+    "city": "Venues TBD",
+    "addr": "TBD",
+    "act": "Rob Wolf",
+    "linkHref": "mailto:booking@garrettsummersmusic.com?subject=Tour%20dates",
+    "linkText": "Inquire"
+  },
+  {
+    "date": "PENDING",
+    "venue": "Tour Dates &mdash; Other Artists",
+    "city": "Venues TBD",
+    "addr": "TBD",
+    "act": "Guest Sets",
+    "linkHref": "mailto:booking@garrettsummersmusic.com?subject=Tour%20dates",
+    "linkText": "Inquire"
+  }
+]
+</script>
+
+<script>
+(function(){
+const TO='jobs@garrettsummers.us';
+const $=(s,r=document)=>r.querySelector(s);
+const mail=(subject,body)=>{location.href='mailto:'+TO+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);};
+const decode=s=>{const t=document.createElement('textarea'); t.innerHTML=s; return t.value;};
+
+const root=document.documentElement, tb=$('#themeToggle');
+const isDark=()=>{const t=root.getAttribute('data-theme'); return t? t==='dark' : matchMedia('(prefers-color-scheme: dark)').matches;};
+const sync=()=>tb.textContent=isDark()?'Light':'Dark';
+try{const s=localStorage.getItem('gs-theme'); if(s) root.setAttribute('data-theme',s);}catch(e){}
+sync(); tb.onclick=()=>{const n=isDark()?'light':'dark'; root.setAttribute('data-theme',n); try{localStorage.setItem('gs-theme',n);}catch(e){} sync();};
+
+const openSheet=el=>{el.classList.add('open'); el.setAttribute('aria-hidden','false'); const f=el.querySelector('input,textarea'); if(f) setTimeout(()=>f.focus(),50);};
+const closeSheet=el=>{el.classList.remove('open'); el.setAttribute('aria-hidden','true');};
+document.querySelectorAll('.sheet,.lightbox').forEach(s=>s.addEventListener('click',e=>{if(e.target.closest('[data-close]')) closeSheet(s);}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape') document.querySelectorAll('.sheet.open,.lightbox.open').forEach(closeSheet);});
+
+const MON={JAN:0,FEB:1,MAR:2,APR:3,MAY:4,JUN:5,JUL:6,AUG:7,SEP:8,OCT:9,NOV:10,DEC:11};
+const today=new Date(); today.setHours(0,0,0,0);
+let shows=[]; try{shows=JSON.parse($('#shows-data').textContent);}catch(e){}
+shows.forEach(s=>{const m=/^([A-Z]{3}) (\d{1,2})$/.exec(s.date); if(m) s._d=new Date(2026,MON[m[1]],+m[2]);});
+const up=shows.filter(s=>!s._d||s._d>=today), past=shows.filter(s=>s._d&&s._d<today).reverse();
+const row=(s,i,isPast)=>{
+  const el=document.createElement('div'); el.className='show'+(isPast?' past':'')+(!isPast&&i===0&&s._d?' next':'');
+  const m=/^([A-Z]{3}) (\d{1,2})$/.exec(s.date);
+  const dHtml=m? `${m[2]}<small>${m[1]}</small>` : `<small style="margin:0">${s.date}</small>`;
+  el.innerHTML=`<div class="d">${dHtml}</div><div><span class="act">${s.act}</span><div class="v">${s.venue}</div><div class="m">${[s.city,s.time].filter(Boolean).join(' · ')}</div></div><div class="acts"></div>`;
+  const a=el.querySelector('.acts');
+  if(s.date==='PENDING'){const b=document.createElement('button'); b.className='chip'; b.textContent='Inquire'; b.onclick=()=>openInquire(decode(s.venue)); a.append(b);}
+  else{
+    if(s.linkHref&&!s.private){const l=document.createElement('a'); l.className='chip'; l.href=s.linkHref; l.target='_blank'; l.rel='noopener'; l.textContent=s.linkText||'Map'; a.append(l);}
+    if(!isPast&&!s.private){const b=document.createElement('button'); b.className='chip'; b.textContent='Share'; b.onclick=()=>openTicket(s); a.append(b);}
+  }
+  return el;
+};
+up.forEach((s,i)=>$('#showsList').append(row(s,i,false)));
+if(past.length){const pt=$('#pastToggle'); pt.hidden=false; past.forEach(s=>$('#pastList').append(row(s,0,true)));
+  pt.onclick=()=>{const pl=$('#pastList'); pl.hidden=!pl.hidden; pt.textContent=pl.hidden?'Show past dates':'Hide past dates';};}
+
+let curShow=null;
+function openTicket(s){curShow=s; $('#tBand').textContent=s.act; $('#tDate').textContent=decode(s.date)+(s.time?' · '+s.time:''); $('#tVenue').textContent=decode(s.venue); $('#tAddr').textContent=[s.addr,s.city].filter(Boolean).join(', '); openSheet($('#tixSheet')); track('show_share_open',{venue:s.venue});}
+function wrap(x,t,X,Y,W,L){let line=''; for(const p of t.split(' ')){const tst=line?line+' '+p:p; if(x.measureText(tst).width>W&&line){x.fillText(line,X,Y); line=p; Y+=L;} else line=tst;} x.fillText(line,X,Y);}
+function ticketPng(s){
+  const c=document.createElement('canvas'); c.width=1080; c.height=1440; const x=c.getContext('2d'); const H='"Helvetica Neue",Helvetica,Arial,sans-serif';
+  x.fillStyle='#0f1e3c'; x.fillRect(0,0,1080,1440);
+  const g=x.createLinearGradient(0,0,1080,0); g.addColorStop(0,'#d1202f'); g.addColorStop(.45,'#e2441f'); g.addColorStop(1,'#f59a23'); x.fillStyle=g; x.fillRect(0,0,1080,28);
+  x.fillStyle='#ffad3b'; x.font='700 34px '+H; x.fillText('ADMIT ONE',72,140);
+  x.fillStyle='#f5f0e6'; x.font='700 120px '+H; wrap(x,s.act,72,300,940,120);
+  x.fillStyle='#ff6a3d'; x.font='700 80px '+H; x.fillText(decode(s.date)+(s.time?' · '+s.time:''),72,720);
+  x.fillStyle='#f5f0e6'; x.font='400 54px '+H; wrap(x,decode(s.venue),72,820,940,64);
+  x.globalAlpha=.7; x.font='400 40px '+H; x.fillText([s.addr,s.city].filter(Boolean).join(', '),72,980);
+  x.setLineDash([12,12]); x.strokeStyle='rgba(245,240,230,.4)'; x.lineWidth=3; x.beginPath(); x.moveTo(72,1300); x.lineTo(1008,1300); x.stroke();
+  x.font='400 36px '+H; x.fillStyle='#f5f0e6'; x.fillText('Garrett Summers · garrettsummers.us',72,1370); x.globalAlpha=1;
+  return new Promise(r=>c.toBlob(r,'image/png'));
+}
+$('#tShare').onclick=async()=>{
+  if(!curShow) return; const blob=await ticketPng(curShow); const file=new File([blob],'garrett-summers-show.png',{type:'image/png'});
+  const text=`${curShow.act} · ${decode(curShow.date)} · ${decode(curShow.venue)}`; track('show_share',{venue:curShow.venue});
+  if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],text,url:'https://garrettsummers.us/#shows'});return;}catch(e){if(e.name==='AbortError')return;}}
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=file.name; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+};
+
+let inqTopic='';
+function addBubble(t,them){const b=document.createElement('div'); b.className='bubble'+(them?' them':''); b.textContent=t; $('#inqThread').append(b);}
+function openInquire(topic){inqTopic=topic; $('#inqThread').innerHTML=''; addBubble(`Hey! Interested in ${topic}? Tell me about it.`,true); $('#inqCompose').hidden=false; $('#inqContact').hidden=true; $('#inqText').value=''; wc(); openSheet($('#inqSheet'));}
+const words=()=>($('#inqText').value.trim().match(/\S+/g)||[]).length;
+function wc(){const left=50-words(); $('#inqWc').textContent=left>=0?`${left} words left`:`${-left} words over`;}
+$('#inqText').addEventListener('input',()=>{wc(); const t=$('#inqText'); t.style.height='auto'; t.style.height=Math.min(t.scrollHeight,140)+'px';});
+$('#inqSend').onclick=()=>{const v=$('#inqText').value.trim(); if(!v||words()>50) return; addBubble(v,false); addBubble('Got it. Where can I reach you?',true); $('#inqCompose').hidden=true; $('#inqContact').hidden=false; $('#inqName').focus();};
+$('#inqContact').onsubmit=e=>{e.preventDefault(); const msg=[...document.querySelectorAll('#inqThread .bubble:not(.them)')].map(b=>b.textContent).join('\n');
+  mail('Inquiry: '+inqTopic, `${msg}\n\nName: ${$('#inqName').value}\nPhone: ${$('#inqPhone').value}\nEmail: ${$('#inqEmail').value}`); track('tour_inquiry',{topic:inqTopic});};
+
+let bidItem=null;
+document.querySelectorAll('.item[data-item]').forEach(b=>b.onclick=()=>{bidItem=b.dataset; $('#bidSub').textContent=`${bidItem.item} · Size ${bidItem.size} · Starting at $${bidItem.start}`; $('#bidAmount').value=''; $('#bidAmount').min=bidItem.start; openSheet($('#bidSheet'));});
+$('#bidAmount').addEventListener('input',e=>e.target.setCustomValidity(''));
+$('#bidForm').onsubmit=e=>{e.preventDefault(); const amt=+$('#bidAmount').value; if(amt<+bidItem.start){$('#bidAmount').setCustomValidity('Bids start at $'+bidItem.start); $('#bidAmount').reportValidity(); return;}
+  mail('Bid: '+bidItem.item, `Item: ${bidItem.item}\nBid: $${amt}\nEmail: ${$('#bidEmail').value}`); track('closet_bid',{item:bidItem.item,amount:amt});};
+
+$('#bookForm').onsubmit=e=>{e.preventDefault(); const f=e.target; if(f.website.value) return;
+  if(!f.name.value.trim()||!/^\S+@\S+\.\S+$/.test(f.email.value)||!f.date.value){$('#bookStatus').textContent='Add your name, a valid email, and a date.'; return;}
+  $('#bookStatus').textContent='';
+  const d=Object.fromEntries(new FormData(f));
+  const body=[`Name: ${d.name}`,`Email: ${d.email}`,`Date: ${d.date}`,`City & venue: ${d.venue||''}`,`Type: ${d.type}`,`Act: ${d.act}`,`Budget: ${d.budget}`,`Capacity: ${d.capacity}`,'',d.notes||''].join('\n');
+  mail(`Booking: ${d.act} · ${d.date}`,body); track('booking_submit',{act:d.act,type:d.type});};
+
+const PHOTOS=[16,3,22,13,12,2,11,23,15,1,19,25,28,29,20,24,9,18,21,14,17,26,10,30,31,4,6,7,27];
+const g=$('#gallery'), lb=$('#lightbox'), lbi=lb.querySelector('img'); let idx=0, shown=8;
+function showLb(){lbi.src=`images/photo${PHOTOS[idx]}.jpg`; lb.classList.add('open'); lb.setAttribute('aria-hidden','false');}
+function renderG(){g.innerHTML=''; PHOTOS.slice(0,shown).forEach((n,i)=>{const b=document.createElement('button'); b.type='button'; b.innerHTML=`<img src="images/photo${n}.jpg" alt="Live photo ${i+1}" loading="lazy">`; b.onclick=()=>{idx=i; showLb();}; g.append(b);});
+  if(shown<PHOTOS.length){const m=document.createElement('button'); m.className='more'; m.type='button'; m.textContent=`Show all ${PHOTOS.length} photos`; m.onclick=()=>{shown=PHOTOS.length; renderG();}; g.append(m);}}
+lb.querySelector('.pv').onclick=e=>{e.stopPropagation(); idx=(idx-1+PHOTOS.length)%PHOTOS.length; showLb();};
+lb.querySelector('.nx').onclick=e=>{e.stopPropagation(); idx=(idx+1)%PHOTOS.length; showLb();};
+lb.addEventListener('click',e=>{if(e.target===lb) closeSheet(lb);});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return; if(e.key==='ArrowLeft') lb.querySelector('.pv').click(); if(e.key==='ArrowRight') lb.querySelector('.nx').click();});
+renderG();
+})();
+</script>
+</body>
+</html>
